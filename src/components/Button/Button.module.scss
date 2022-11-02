@@ -1,0 +1,40 @@
+.wrapper {
+    min-width: 100px;
+    padding: 12px 16px;
+    border-radius: 500px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    font-weight: 700;
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -ms-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+    transition: tranform 0.4s ease;
+
+    &:hover {
+        color: var(--white-color);
+
+        -webkit-transform: scale(1.04);
+        -moz-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        -o-transform: scale(1.04);
+        transform: scale(1.04);
+    }
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.text {
+    padding: 12px 12px;
+    background-color: transparent;
+    color: var(--text-sub-color);
+}
+
+.user {
+    background-color: var(--text-sub-color);
+    color: var(--white-color);
+}

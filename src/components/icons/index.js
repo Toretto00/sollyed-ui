@@ -49,6 +49,40 @@ export const ClearIcon = ({ height = '24px', width = '24px', className }) => {
     );
 };
 
+export const ArrowDownIcon = ({
+    width = '16px',
+    height = '16px',
+    className,
+}) => {
+    return (
+        <svg
+            role="img"
+            height={height}
+            width={width}
+            className={className}
+            aria-hidden="true"
+            viewBox="0 0 16 16"
+        >
+            <path d="M14 6l-6 6-6-6h12z"></path>
+        </svg>
+    );
+};
+
+export const ArrowUpIcon = ({ width = '16px', height = '16px', className }) => {
+    return (
+        <svg
+            role="img"
+            height={height}
+            width={width}
+            className={className}
+            aria-hidden="true"
+            viewBox="0 0 16 16"
+        >
+            <path d="M14 10L8 4l-6 6h12z"></path>
+        </svg>
+    );
+};
+
 export const HomeIcon = ({
     width = '2.4rem',
     height = '2.4rem',

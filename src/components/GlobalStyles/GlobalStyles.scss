@@ -1,16 +1,17 @@
 @import 'normalize.css';
 
 :root {
+    --white-color: #fff;
+    --black-color: #000;
+
     --primary-color: #1ed760;
     --background-color: #121212;
 
-    --white-color: #fff;
-    --black-color: #000;
     --text-sub-color: #a7a7a7;
 
     --active-color: #1ed760;
 
-    --light-hover-color: rgba(0, 0, 0, 0.2);
+    --light-hover-color: rgba(0, 0, 0, 0.1);
 
     // Font Family
     --font-family: 'CircularSp', sans-serif;
