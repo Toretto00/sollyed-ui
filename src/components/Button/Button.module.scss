@@ -6,6 +6,7 @@
     vertical-align: middle;
     font-size: 1.6rem;
     font-weight: 700;
+
     -webkit-transition: transform 0.4s ease;
     -moz-transition: transform 0.4s ease;
     -ms-transition: transform 0.4s ease;
@@ -13,6 +14,7 @@
     transition: tranform 0.4s ease;
 
     &:hover {
+        cursor: pointer;
         color: var(--white-color);
 
         -webkit-transform: scale(1.04);
@@ -34,7 +36,31 @@
     color: var(--text-sub-color);
 }
 
-.user {
-    background-color: var(--text-sub-color);
-    color: var(--white-color);
+.menuItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 2px;
+    background-color: transparent;
+    color: var(--text-sub-color);
+    position: relative;
+
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.1);
+        color: #fff;
+        transform: none;
+    }
+}
+
+.separate {
+    &::after {
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+    }
 }
