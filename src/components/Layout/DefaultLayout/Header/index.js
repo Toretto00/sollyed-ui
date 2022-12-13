@@ -1,10 +1,7 @@
 import { useRef, useState } from 'react';
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react';
-<<<<<<< HEAD
 import Headless from '@tippyjs/react/headless';
-=======
->>>>>>> bce3d7c3be1d0d0aee40fe5fe1debc830c8349ea
 import 'tippy.js/dist/tippy.css';
 import { Fragment } from 'react';
 
@@ -14,10 +11,7 @@ import {
     ArrowUpIcon,
     ClearIcon,
     LogoIcon,
-<<<<<<< HEAD
     MenuItemIcon,
-=======
->>>>>>> bce3d7c3be1d0d0aee40fe5fe1debc830c8349ea
     SearchIcon,
 } from '@/components/icons';
 import Button from '@/components/Button';
@@ -31,8 +25,7 @@ function Header() {
         inputRef.current.value = '';
     };
 
-<<<<<<< HEAD
-    const currentUser = true;
+    //const currentUser = true;
 
     const menuItems = [
         {
@@ -85,14 +78,12 @@ function Header() {
     //     setCurrentUser(true);
     // };
 
-=======
     const [currentUser, setCurrentUser] = useState(false);
 
     const handleLogin = () => {
         setCurrentUser(true);
     };
 
->>>>>>> bce3d7c3be1d0d0aee40fe5fe1debc830c8349ea
     return (
         <div className={cx('wrapper')}>
             <LogoIcon className={cx('logoIcon')} />
@@ -108,11 +99,7 @@ function Header() {
                 >
                     <ClearIcon width="16px" height="16px" />
                 </button>
-<<<<<<< HEAD
                 <Tippy content="Search">
-=======
-                <Tippy content="Seacrh">
->>>>>>> bce3d7c3be1d0d0aee40fe5fe1debc830c8349ea
                     <button className={cx('search-btn')}>
                         <SearchIcon />
                     </button>
@@ -121,7 +108,6 @@ function Header() {
             <div className={cx('action')}>
                 {currentUser ? (
                     <>
-<<<<<<< HEAD
                         <Headless
                             trigger="click"
                             hideOnClick
@@ -169,47 +155,6 @@ function Header() {
                         <Button primary to="/login">
                             Login
                         </Button>
-=======
-                        <button className={cx('current-user')}>
-                            <span>
-                                <img
-                                    aria-hidden="false"
-                                    draggable="false"
-                                    loading="eager"
-                                    src="@/assets/images/userava.jpg"
-                                    alt="User avatar"
-                                    className="user-avatar"
-                                />
-                            </span>
-                            <span>Toretto Bảo</span>
-                            <ArrowDownIcon />
-                            <ArrowUpIcon className={cx('hidden')} />
-                        </button>
-                    </>
-                ) : (
-                    <>
-                        <Tippy content="Premium">
-                            <Button text to="/premium" target="blank">
-                                Premium
-                            </Button>
-                        </Tippy>
-                        <Tippy content="Download">
-                            <Button text to="/download" target="blank">
-                                Download
-                            </Button>
-                        </Tippy>
-                        <div className={cx('separate')}></div>
-                        <Tippy content="Sign up">
-                            <Button text to="/signup">
-                                Sign up
-                            </Button>
-                        </Tippy>
-                        <Tippy content="Login">
-                            <Button primary onClick={handleLogin}>
-                                Login
-                            </Button>
-                        </Tippy>
->>>>>>> bce3d7c3be1d0d0aee40fe5fe1debc830c8349ea
                     </>
                 )}
             </div>

@@ -6,10 +6,6 @@
     vertical-align: middle;
     font-size: 1.6rem;
     font-weight: 700;
-<<<<<<< HEAD
-
-=======
->>>>>>> bce3d7c3be1d0d0aee40fe5fe1debc830c8349ea
     -webkit-transition: transform 0.4s ease;
     -moz-transition: transform 0.4s ease;
     -ms-transition: transform 0.4s ease;
@@ -17,10 +13,7 @@
     transition: tranform 0.4s ease;
 
     &:hover {
-<<<<<<< HEAD
         cursor: pointer;
-=======
->>>>>>> bce3d7c3be1d0d0aee40fe5fe1debc830c8349ea
         color: var(--white-color);
 
         -webkit-transform: scale(1.04);
@@ -42,7 +35,6 @@
     color: var(--text-sub-color);
 }
 
-<<<<<<< HEAD
 .menuItem {
     display: flex;
     justify-content: space-between;
@@ -70,9 +62,7 @@
         position: absolute;
         right: 0;
     }
-=======
 .user {
     background-color: var(--text-sub-color);
     color: var(--white-color);
->>>>>>> bce3d7c3be1d0d0aee40fe5fe1debc830c8349ea
 }

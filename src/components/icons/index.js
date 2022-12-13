@@ -62,10 +62,7 @@ export const ArrowDownIcon = ({
             className={className}
             aria-hidden="true"
             viewBox="0 0 16 16"
-<<<<<<< HEAD
             fill="currentColor"
-=======
->>>>>>> bce3d7c3be1d0d0aee40fe5fe1debc830c8349ea
         >
             <path d="M14 6l-6 6-6-6h12z"></path>
         </svg>
@@ -81,17 +78,13 @@ export const ArrowUpIcon = ({ width = '16px', height = '16px', className }) => {
             className={className}
             aria-hidden="true"
             viewBox="0 0 16 16"
-<<<<<<< HEAD
             fill="currentColor"
-=======
->>>>>>> bce3d7c3be1d0d0aee40fe5fe1debc830c8349ea
         >
             <path d="M14 10L8 4l-6 6h12z"></path>
         </svg>
     );
 };
 
-<<<<<<< HEAD
 export const MenuItemIcon = ({
     width = '16px',
     height = '16px',
@@ -113,8 +106,6 @@ export const MenuItemIcon = ({
     );
 };
 
-=======
->>>>>>> bce3d7c3be1d0d0aee40fe5fe1debc830c8349ea
 export const HomeIcon = ({
     width = '2.4rem',
     height = '2.4rem',
