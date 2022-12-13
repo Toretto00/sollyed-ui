@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react';
 import Headless from '@tippyjs/react/headless';
@@ -25,7 +25,7 @@ function Header() {
         inputRef.current.value = '';
     };
 
-    //const currentUser = true;
+    const currentUser = true;
 
     const menuItems = [
         {
@@ -78,11 +78,11 @@ function Header() {
     //     setCurrentUser(true);
     // };
 
-    const [currentUser, setCurrentUser] = useState(false);
+    // const [currentUser, setCurrentUser] = useState(true);
 
-    const handleLogin = () => {
-        setCurrentUser(true);
-    };
+    // const handleLogin = () => {
+    //     setCurrentUser(true);
+    // };
 
     return (
         <div className={cx('wrapper')}>

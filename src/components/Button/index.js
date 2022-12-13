@@ -16,7 +16,6 @@ function Button({
     leftIcon,
     rightIcon,
     user,
-    children,
     onClick,
     ...passProps
 }) {
@@ -41,9 +40,6 @@ function Button({
         primary,
         text,
         menuItem,
-        className,
-        primary,
-        text,
         user,
     });
 
@@ -52,7 +48,6 @@ function Button({
             {leftIcon && <span>{leftIcon}</span>}
             <span>{children}</span>
             {rightIcon && <span>{rightIcon}</span>}
-            <span>{children}</span>
         </Comp>
     );
 }
